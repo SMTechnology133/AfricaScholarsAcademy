@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+   	<meta name="keywords" content="Africa, Scholars, Academy, School, Knowledge"/>
+
+<meta name="Author" content="Salmanda"/> 
+
+<meta name="revised" content="Profiler, 1/2/2026"/>
+ 
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    
+    <meta name="mobile-web-app-capable" content="yes"/>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    
+    <meta name="msapplication-starturl" content=""/>
+    
+     <meta name="robots"
+content="noindex,nofollow"/> 
+    
+    <meta name="theme-color" content="teal"/> 
+  
+  <link rel="icon" type="image" href="ASA.png"/>
+  
+  <title>Africa Scholars Academy</title>
+  <style>
+    :root {
+      --accent: teal;
+      --accent-dark: #0b6abf;
+      --muted: orange;
+      --bg: lightgray;
+      --radius: 12px;
+      --shadow: 0 6px 18px rgba(16,24,40,0.08);
+    }
+
+    * {
+    	 box-sizing: border-box; margin: 0; padding: 0;
+    	  }
+    	  
+    body {
+      font-family: georgia;
+      padding: 10px;
+      background: var(--bg);
+      color: #111;
+      line-height: 1.5;
+      text-align:center;
+    }
+
+    header {
+      background: gray;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow);
+      border-radius: 6px;
+      margin-top: 1px;
+      border: solid orange 1px;
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: auto;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo {
+      background: var(--accent);
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px 14px;
+      border-radius: var(--radius);
+      border: 1px solid orange;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 5px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid orange;
+      background: gray;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .cta {
+      background: var(--accent);
+      color: orange;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: bold;
+      border: 1px solid orange;
+    }
+
+    /* Hero */
+    .hero {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      
+      /*nav ul { display: none; }
+    }*/
+
+    section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: teal;
+    }
+
+    .programs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .card {
+      background: teal;
+      border-radius: var(--radius);
+      padding: 15px;
+      box-shadow: var(--shadow);
+      border: 1px solid orange;
+      color: orange;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: var(--radius);
+    }
+
+    form {
+      display: grid;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: var(--radius);
+      border: 1px solid teal;
+      width: 100%;
+      background: orange;
+    }
+
+    button {
+      background: var(--accent);
+      color: orange;
+      border: none;
+      padding: 10px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      border: 1px solid orange;
+    }
+
+    footer {
+      background: teal;
+      color: orange;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border: 1px solid orange;
+      border-radius: 6px;
+    }
+    
+    .picturee{
+width: 70px;
+height: 70px;
+border: 1px solid orange;
+border-radius: 35px;
+padding: 1px;
+margin-top: 6px;
+}
+
+  /*registration form css*/
+        .form-container {
+            max-width: 500px;
+            background: #ffffff;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: teal;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid teal;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        button:hover {
+            background: maroon;
+        }
+
+        .note {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+        }
+      /*registration form css*/
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo"><img class="picturee" src="ASA.png"/></div>
+        <span style="color: maroon; font-weight:bold;"><strong>Africa Scholars Academy</strong></span>
+      </div>
+      
+      <a href="#admissions" class="cta">Apply Now</a> 
+    </div>
+    <nav>
+        <ul>
+          &nbsp;<li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  
+  <section class="hero">
+    <div>
+      <h1 style="color: maroon">Africa Scholars Academy</h1>
+      
+      <h2>Knowledge is Power</h2>
+      
+      <p style="text-shadow: 1px 1px 2px black;">Our mission "Nurturing curious minds through quality education, discipline, and creativity."</p>
+      <a href="#contact" class="cta">Contact Us</a>
+    </div>
+    <img src="AfricaScholarsAcademy3.png" alt="Students learning">
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Founded in 2025, Africa Scholars Academy is a private school that combines strong academics with moral and social development. We offer both day, part time and online classes for primary and secondary students.</p>
+  </section>
+
+  <section id="programs">
+    <h2>Our Programs</h2>
+    <div class="programs">
+      <div class="card">
+        <h3>Early Childhood</h3>
+        <p>Play-based learning that builds foundational literacy and numeracy skills.</p>
+      </div>
+      <div class="card">
+        <h3>Primary Education</h3>
+        <p>Comprehensive learning with focus on academic excellence and creativity.</p>
+      </div>
+      <div class="card">
+        <h3>Secondary Education</h3>
+        <p>Exam preparation with career guidance and leadership training.</p>
+      </div>
+      
+       <div class="card">
+        <h3>Computer Studies</h3>
+        <p>In a technologically advancing world, we help students to understand the use of computers and Artificial intelligence (AI) for education purpose.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="admissions">
+    <h2>Admissions</h2>
+    <p>We are always accepting applications. Please contact our admissions office or fill out our online application form.</p>
+  </section>
+  
+  <button id="shbtn1">Online Registration Form</button>
+  
+ <div class="safetyTips" id="d1" style="display:none;">
+       
+<div class="form-container">
+    <h2>School Registration Form</h2>
+
+    <label>Student Full Name</label>
+    <input type="text" id="studentName" required>
+
+    <label>Date of Birth</label>
+    <input type="date" id="dob" required>
+
+    <label>Gender</label>
+    <select id="gender">
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+
+    <label>Class Applying For</label>
+    <input type="text" id="class">
+
+    <label>Parent / Guardian Name</label>
+    <input type="text" id="parentName">
+
+    <label>Parent / Guardian Phone</label>
+    <input type="tel" id="parentPhone">
+
+    <label>Home Address</label>
+    <textarea id="address"></textarea>
+
+    <button onclick="sendToWhatsApp()">Send via WhatsApp</button>
+
+    <div class="note">
+        You will be redirected to WhatsApp to send the message.
+    </div>
+</div>
+</div>
+  
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="AfricaScholarsAcademy2.png"
+       alt="School building">
+       
+      <img src="AfricaScholarsAcademy1.png" alt="Students in class">
+      	
+      <img src="AfricaScholarsAcademy5.png" alt="Science lab">
+      	
+      <img src="AfricaScholarsAcademy4.png" alt="Class Room Cartoon">
+    </div>
+  </section>
+  
+    <button onclick="vlibrary();">Student's Online Virtual Library</button>
+  
+  <section id="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="number" id="phone" placeholder="Your contact number" required />
+    <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<script> document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevents the page from refreshing
+
+    // 1. Enter your WhatsApp number here (with country code, no + or spaces)
+    const phoneNumber = "265982177920"; 
+
+    // 2. Get values from the form
+    const name = document.getElementById('name').value;
+    const contact = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+
+    // 3. Construct the message string
+    const fullMessage = `Hello! %0A*Name:* ${name} %0A*Contact:* ${contact} %0A*Message:* ${message}`;
+
+    // 4. Create the WhatsApp URL
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${fullMessage}`;
+
+    // 5. Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank').focus();
+  });
+</script>
+
+  <footer>
+    <p>&copy 2025 Africa Scholars Academy. All rights reserved.</p>
+  </footer>
+  
+  <script src="jquery.min.js"></script>
+  <script>
+    function sendToWhatsApp() {
+        // CHANGE THIS NUMBER TO YOUR SCHOOL'S WHATSAPP NUMBER
+        // Use international format, Malawi example: +265XXXXXXXXX
+        var phoneNumber = "265982177920";
+
+        var studentName = document.getElementById("studentName").value;
+        var dob = document.getElementById("dob").value;
+        var gender = document.getElementById("gender").value;
+        var studentClass = document.getElementById("class").value;
+        var parentName = document.getElementById("parentName").value;
+        var parentPhone = document.getElementById("parentPhone").value;
+        var address = document.getElementById("address").value;
+
+        if(studentName === "" || dob === "") {
+            alert("Please fill in required fields.");
+            return;
+        }
+
+        var message =
+            "📘 *School Registration Form* %0A%0A" +
+            "*Student Name:* " + studentName + "%0A" +
+            "*Date of Birth:* " + dob + "%0A" +
+            "*Gender:* " + gender + "%0A" +
+            "*Class Applying For:* " + studentClass + "%0A%0A" +
+            "*Parent/Guardian Name:* " + parentName + "%0A" +
+            "*Parent Phone:* " + parentPhone + "%0A" +
+            "*Address:* " + address;
+
+        var whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + message;
+        window.open(whatsappURL, "_blank");
+    }
+    
+    	//toggle safety tip 1
+$(document).ready(function() 
+{ 
+
+$("#shbtn1").click(function() 
+{ 
+
+$("#d1").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+vlibrary=()=>{
+	open("https:///smtechnology.github.io/africaonline/vlibrary.html");
+}
+</script>
+</body>
+</html>
